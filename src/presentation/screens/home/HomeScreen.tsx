@@ -9,7 +9,7 @@ export const HomeScreen = () => {
       <Button
         style={{ width: 200 }}
         accessoryLeft={
-          <Icon name="facebook" width={32} height={32} fill="#ffffff" />
+          <Icon name="facebook" width={32} height={32} fill="#fff3f3" />
         }
       >
         Go to Home

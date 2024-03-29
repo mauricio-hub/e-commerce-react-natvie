@@ -1,10 +1,10 @@
 import "react-native-gesture-handler";
-import { ApplicationProvider,IconRegistry } from "@ui-kitten/components";
+import { ApplicationProvider, IconRegistry } from "@ui-kitten/components";
 import * as eva from "@eva-design/eva";
 import { NavigationContainer } from "@react-navigation/native";
 import { StackNavigator } from "./src/presentation/navigation/StackNavigator";
 import { useColorScheme } from "react-native";
-import { EvaIconsPack } from '@ui-kitten/eva-icons';
+import { EvaIconsPack } from "@ui-kitten/eva-icons";
 
 export default function App() {
   const colorScheme = useColorScheme();
@@ -14,7 +14,7 @@ export default function App() {
   return (
     <>
       <IconRegistry icons={EvaIconsPack} />
-      <ApplicationProvider {...eva} theme={ theme }>
+      <ApplicationProvider {...eva} theme={theme}>
         <NavigationContainer>
           <StackNavigator />
         </NavigationContainer>
