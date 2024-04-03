@@ -7,11 +7,13 @@ import { StackScreenProps } from "@react-navigation/stack";
 import { RootStackParam } from "../../navigation/StackNavigator";
 
 
+
 interface Props extends StackScreenProps<RootStackParam, "LoginScreen"> {}
 
 
 export const LoginScreen = ({navigation}:Props) => {
   const { height } = useWindowDimensions();
+
 
   return (
     <Layout style={{ flex: 1 }}>
@@ -48,6 +50,9 @@ export const LoginScreen = ({navigation}:Props) => {
           <Button
             accessoryRight={<MyIcon name="arrow-forward-outline" />}
             style={{ marginBottom: 10 }}
+            onPress={() => {
+              navigation.navigate("HomeScreen");
+            }}
           >
             Ingresar
           </Button>
